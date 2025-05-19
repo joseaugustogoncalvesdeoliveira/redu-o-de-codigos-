@@ -1,0 +1,75 @@
+h1 {  font-style: italic;}
+
+body {background-color: rgb(238, 231, 231);}
+
+#ima1 {width: 70%; border-style: dashed; border-color: rgb(3, 130, 241); border-width: 2px; margin-left: 15%;}
+
+.organizar{
+    margin-left: 45%;
+    width: 70%; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+  
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height:0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #f8f408; 
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px); 
+}
+
